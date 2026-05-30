@@ -25,7 +25,7 @@ A 2D side-scrolling platformer built in Java with a custom game engine - featuri
 
 ## About the Game
 
-Adventure Ball Game is a handcrafted 2D platformer written entirely in Java (SE 22), using only the standard library and `javax.sound.sampled` for audio - no game engine frameworks. The game features a custom game loop, sprite-based animation, tile-based level rendering, hitbox collision detection, an enemy AI system, a coin/spike object system, and a persistent high-score tracker.
+Adventure Ball Game is a handcrafted 2D platformer written entirely in Java (SE 22), using only the standard library and `javax.sound.sampled` for audio - no game engine frameworks. The game features a custom game loop, sprite-based animation, tile-based level rendering, hitbox collision detection, an enemy behavior system system, a coin/spike object system, and a persistent high-score tracker.
 
 ---
 
@@ -44,7 +44,7 @@ Navigate through multiple levels, defeat enemies, collect coins, and reach the e
 - **Custom Java Game Engine** - fixed-timestep game loop running at 200 UPS / 120 FPS
 - **Tile-based Level System** - levels are encoded as PNG images; pixel color channels encode tile type, enemies, coins, spikes, and player spawn
 - **Player Mechanics** - run, jump, attack, and dash with cooldown management
-- **Enemy AI (Bablu)** - line-of-sight detection, patrol, chase, and attack states
+- **Enemy Behavior System (Bablu)** - line-of-sight detection, patrol, chase, and attack states
 - **Object System** - hovering coins with hitbox detection, spike hazards
 - **Audio System** - background music per level, sound effects for jump/attack/death/level-complete, volume control and mute toggles
 - **UI Overlays** - pause menu, game over screen, level completed screen, game completed screen
@@ -78,7 +78,7 @@ Adventure_Ball_Game/
 │   ├── entities/
 │   │   ├── Entity.java               # Base entity with hitbox, animation state
 │   │   ├── Player.java               # Player movement, combat, dash, HUD
-│   │   ├── Enemy.java                # Base enemy AI (patrol, chase, attack)
+│   │   ├── Enemy.java                # Base enemy behavior system (patrol, chase, attack)
 │   │   ├── Bablu.java                # Concrete enemy type
 │   │   └── EnemyManager.java         # Manages all enemies per level
 │   ├── gamestates/
