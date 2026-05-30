@@ -2,7 +2,7 @@
 
 A 2D side-scrolling platformer built in Java with a custom game engine - featuring combat, collectibles, enemies, audio, a scoring system, and multi-level progression.
 
-![Game Menu](screenshots/menu.png)
+![Game Menu](screenshots/game_menu.png)
 
 ![Game Play](screenshots/gameplay.png)
 
